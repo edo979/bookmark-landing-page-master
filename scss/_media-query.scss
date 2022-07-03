@@ -1,0 +1,21 @@
+// Components
+@include mq($bp-lg) {
+  .main-nav {
+    label {
+      display: none;
+    }
+
+    &_list {
+      display: block;
+
+      .flex {
+        display: none;
+      }
+
+      nav {
+        flex-direction: row;
+        gap: 1rem;
+      }
+    }
+  }
+}
