@@ -1,0 +1,32 @@
+.tablist {
+  .tab-pane {
+    display: none;
+  }
+
+  input[id$='1']:checked {
+    ~ #tab-1-pane {
+      display: block;
+    }
+    + label {
+      outline: 1px solid red;
+    }
+  }
+
+  input[id$='2']:checked {
+    ~ #tab-2-pane {
+      display: block;
+    }
+    + label {
+      outline: 1px solid red;
+    }
+  }
+
+  input[id$='3']:checked {
+    ~ #tab-3-pane {
+      display: block;
+    }
+    + label {
+      outline: 1px solid red;
+    }
+  }
+}
