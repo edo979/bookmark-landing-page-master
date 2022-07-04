@@ -71,7 +71,7 @@
       </div>
     </div>
 
-    <section>
+    <header>
       <h1>A Simple Bookmark Manager</h1>
       <p>
         A clean and simple interface to organize your favourite websites. Open a
@@ -81,98 +81,165 @@
         <button class="btn btn-primary">Get it on Chrome</button>
         <button class="btn btn-secondary">Get it on Firefox</button>
       </div>
+    </header>
+
+    <section class="bg-img-left">
+      <article>
+        <h2>Features</h2>
+        <p>
+          Our aim is to make it quick and easy for you to access your favourite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
+      </article>
+
+      <div class="tablist" role="tablist">
+        <input type="radio" name="tablist" id="tab-1" value="tab-1" checked />
+        <label for="tab-1">Simple Bookmarking</label>
+
+        <input type="radio" name="tablist" id="tab-2" value="tab-2" />
+        <label for="tab-2">Speedy Searching</label>
+
+        <input type="radio" name="tablist" id="tab-3" value="tab-3" />
+        <label for="tab-3">Easy Sharing</label>
+
+        <div class="tab-pane" id="tab-1-pane">
+          <h3>Bookmark in one click</h3>
+          <p>
+            Organize your bookmarks however you like. Our simple drag-and-drop
+            interface gives you complete control over how you manage your
+            favourite sites.
+          </p>
+          <button class="btn btn-primary">More Info</button>
+        </div>
+
+        <div class="tab-pane" id="tab-2-pane">
+          <h3>Intelligent search</h3>
+          <p>
+            Our powerful search feature will help you find saved sites in no
+            time at all. No need to trawl through all of your bookmarks.
+          </p>
+          <button class="btn btn-primary">More Info</button>
+        </div>
+
+        <div class="tab-pane" id="tab-3-pane">
+          <h3>Share your bookmarks</h3>
+          <p>
+            Easily share your bookmarks and collections with others. Create a
+            shareable link that you can send at the click of a button.
+          </p>
+          <button class="btn btn-primary">More Info</button>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Features</h2>
-      <p>
-        Our aim is to make it quick and easy for you to access your favourite
-        websites. Your bookmarks sync between your devices so you can access
-        them on the go.
-      </p>
-    </section>
-
-    <section class="tablist" role="tablist">
-      <input type="radio" name="tablist" id="tab-1" value="tab-1" checked />
-      <label for="tab-1">Simple Bookmarking</label>
-
-      <input type="radio" name="tablist" id="tab-2" value="tab-2" />
-      <label for="tab-2">Speedy Searching</label>
-
-      <input type="radio" name="tablist" id="tab-3" value="tab-3" />
-      <label for="tab-3">Easy Sharing</label>
-
-      <div class="tab-pane" id="tab-1-pane">
-        <h3>Bookmark in one click</h3>
+    <section class="cards">
+      <article>
+        <h2>Download the extension</h2>
         <p>
-          Organize your bookmarks however you like. Our simple drag-and-drop
-          interface gives you complete control over how you manage your
-          favourite sites.
+          We’ve got more browsers in the pipeline. Please do let us know if
+          you’ve got a favourite you’d like us to prioritize.
         </p>
-        <button class="btn btn-primary">More Info</button>
-      </div>
+      </article>
 
-      <div class="tab-pane" id="tab-2-pane">
-        <h3>Intelligent search</h3>
-        <p>
-          Our powerful search feature will help you find saved sites in no time
-          at all. No need to trawl through all of your bookmarks.
-        </p>
-        <button class="btn btn-primary">More Info</button>
-      </div>
+      <div class="cards-container">
+        <div class="card">
+          <img src="images/logo-chrome.svg" alt="google crhome logo" />
+          <h3>Add to Chrome</h3>
+          <p>Minimum version 62</p>
+          <button class="btn btn-primary btn-lg">
+            Add & Install Extension
+          </button>
+        </div>
 
-      <div class="tab-pane" id="tab-3-pane">
-        <h3>Share your bookmarks</h3>
-        <p>
-          Easily share your bookmarks and collections with others. Create a
-          shareable link that you can send at the click of a button.
-        </p>
-        <button class="btn btn-primary">More Info</button>
+        <div class="card">
+          <img src="images/logo-firefox.svg" alt="mozila firefox logo" />
+          <h3>Add to Firefox</h3>
+          <p>Minimum version 55</p>
+          <button class="btn btn-primary btn-lg">
+            Add & Install Extension
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="images/logo-opera.svg" alt="internet browser opera logo" />
+          <h3>Add to Opera</h3>
+          <p>Minimum version 46</p>
+          <button class="btn btn-primary btn-lg">
+            Add & Install Extension
+          </button>
+        </div>
       </div>
     </section>
 
-    Download the extension We’ve got more browsers in the pipeline. Please do
-    let us know if you’ve got a favourite you’d like us to prioritize. Add to
-    Chrome Minimum version 62 Add & Install Extension Add to Firefox Minimum
-    version 55 Add & Install Extension Add to Opera Minimum version 46 Add &
-    Install Extension Frequently Asked Questions Here are some of our FAQs. If
-    you have any other questions you’d like answered please feel free to email
-    us.
+    <section class="accordion-content">
+      <article>
+        <h2>Frequently Asked Questions</h2>
+        <p>
+          Here are some of our FAQs. If you have any other questions you’d like
+          answered please feel free to email us.
+        </p>
+      </article>
 
-    <!-- Question 1 -->
-    What is Bookmark?
+      <div class="accordion">
+        <!-- Question 1 -->
+        <label for="collapse-1">What is Bookmark?</label>
+        <input type="radio" name="accordion" id="collapse-1" />
+        <!-- Answer 1 -->
+        <div class="accordion-collapse">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+            tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
+            quis quam ornare mattis.
+          </p>
+        </div>
 
-    <!-- Answer 1 -->
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
-    justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare
-    mattis.
+        <!-- Question 2 -->
+        <label for="collapse-2">How can I request a new browser?</label>
+        <input type="radio" name="accordion" id="collapse-2" />
+        <!-- Answer 2 -->
+        <div class="accordion-collapse">
+          <p>
+            Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+            ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros
+            aliquet convallis ultricies. Mauris augue massa, ultricies non
+            ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
+            ultricies. Mauris augue massa, ultricies non ligula. Suspendisse
+            imperdiet.
+          </p>
+        </div>
 
-    <!-- Question 2 -->
-    How can I request a new browser?
+        <!-- Question 3 -->
+        <label for="collapse-3">Is there a mobile app?</label>
+        <input type="radio" name="accordion" id="collapse-3" />
+        <!-- Answer 3 -->
+        <div class="accordion-collapse">
+          <p>
+            Sed consectetur quam id neque fermentum accumsan. Praesent luctus
+            vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula
+            quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin
+            ex et ultricies bibendum.
+          </p>
+        </div>
 
-    <!-- Answer 2 -->
-    Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
-    ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet
-    convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse
-    imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue
-    massa, ultricies non ligula. Suspendisse imperdiet.
+        <!-- Question 4 -->
+        <label for="collapse-4">What about other Chromium browsers?</label>
+        <input type="radio" name="accordion" id="collapse-4" />
+        <!-- Answer 4 -->
+        <div class="accordion-collapse">
+          <p>
+            Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat
+            mi, at euismod dui. Aliquam vitae neque eget nisl gravida
+            pellentesque non ut velit.
+          </p>
+        </div>
+      </div>
 
-    <!-- Question 3 -->
-    Is there a mobile app?
+      <button class="btn btn-primary">More Info</button>
+    </section>
 
-    <!-- Answer 3 -->
-    Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum
-    dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra
-    mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.
-
-    <!-- Question 4 -->
-    What about other Chromium browsers?
-
-    <!-- Answer 4 -->
-    Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at
-    euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut
-    velit. More Info 35,000+ already joined Stay up-to-date with what we’re
-    doing Contact Us Features Pricing Contact
+    35,000+ already joined Stay up-to-date with what we’re doing Contact Us
+    Features Pricing Contact
 
     <footer>
       <p class="attribution">
