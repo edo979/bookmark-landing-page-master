@@ -2,3 +2,12 @@
   display: flex;
   justify-content: var(--justify, space-between);
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: minmax(15px, 5vw) 1fr minmax(15px, 5vw);
+
+  > * {
+    grid-column: 2 / 3;
+  }
+}
