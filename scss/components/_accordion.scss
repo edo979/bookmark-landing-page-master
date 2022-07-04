@@ -9,7 +9,7 @@
   }
 
   input[type='radio']:checked {
-    & ~ .accordion_collapse {
+    & + .accordion_collapse {
       display: block;
     }
   }
