@@ -1,0 +1,16 @@
+.accordion {
+  &_collapse,
+  input[type='radio'] {
+    display: none;
+  }
+
+  label {
+    display: block;
+  }
+
+  input[type='radio']:checked {
+    & ~ .accordion_collapse {
+      display: block;
+    }
+  }
+}
