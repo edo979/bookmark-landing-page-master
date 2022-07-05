@@ -28,9 +28,9 @@
   grid-area: 3 / 2 / 4 / 3;
 }
 
-.tab-pane_background {
+.tablist_background {
   grid-area: 3 / 1 / 4 / 4;
   z-index: -1;
-
-  margin-top: 230px;
+  align-self: center;
+  margin-top: 120px;
 }

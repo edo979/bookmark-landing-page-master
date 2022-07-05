@@ -63,10 +63,13 @@
     }
 
     &_background {
-      height: 350px;
-      width: 530px;
       margin-top: auto;
     }
+  }
+
+  .bg-box {
+    height: 350px;
+    width: 530px;
   }
 
   .center-content {
@@ -79,6 +82,46 @@
   .cards {
     &_container {
       --direction: row;
+    }
+  }
+
+  .tablist {
+    &-section {
+      width: 100%;
+    }
+
+    input[id$='1']:checked {
+      ~ #tab-1-pane {
+        display: flex;
+      }
+    }
+
+    input[id$='2']:checked {
+      ~ #tab-2-pane {
+        display: flex;
+      }
+    }
+
+    input[id$='3']:checked {
+      ~ #tab-3-pane {
+        display: flex;
+      }
+    }
+
+    .tab-pane {
+      justify-content: space-between;
+      align-items: center;
+      min-height: 500px;
+
+      &_text {
+        max-width: 45ch;
+      }
+    }
+
+    &_background {
+      justify-self: start;
+      align-self: end;
+      margin-top: 0;
     }
   }
 }
