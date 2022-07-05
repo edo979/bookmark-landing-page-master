@@ -68,4 +68,17 @@
       margin-top: auto;
     }
   }
+
+  .center-content {
+    margin-inline: auto;
+    max-width: 53ch;
+
+    text-align: center;
+  }
+
+  .cards {
+    &_container {
+      --direction: row;
+    }
+  }
 }

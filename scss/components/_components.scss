@@ -25,3 +25,9 @@
     margin-top: 50px;
   }
 }
+
+.cards {
+  &_container {
+    --direction: column;
+  }
+}
