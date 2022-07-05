@@ -5,13 +5,13 @@
   background-color: blue;
 
   &--rounded-left {
-    border-bottom-left-radius: 100px;
-    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100vmax;
+    border-top-left-radius: 100vmax;
   }
 
   &--rounded-right {
-    border-bottom-right-radius: 100px;
-    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100vmax;
+    border-top-right-radius: 100vmax;
   }
 }
 
@@ -19,5 +19,9 @@
   &_img {
     width: 112%;
     margin-left: -6%;
+  }
+
+  &_background {
+    margin-top: 50px;
   }
 }
