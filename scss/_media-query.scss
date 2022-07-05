@@ -1,5 +1,17 @@
-// Components
 @include mq($bp-lg) {
+  // Layout:
+  .grid-container {
+    max-width: 1440px;
+    margin-inline: auto;
+
+    grid-template-columns: minmax(32px, 1fr) minmax(735px, 1110px) minmax(
+        32px,
+        1fr
+      );
+    justify-items: center;
+  }
+
+  // Components
   .main-nav {
     label {
       display: none;
@@ -20,6 +32,13 @@
 
     &_social {
       display: none;
+    }
+  }
+
+  .header {
+    &_img {
+      width: 100%;
+      margin-left: 0;
     }
   }
 }
