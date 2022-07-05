@@ -1,0 +1,16 @@
+.bg-box {
+  width: min(300px, 90%);
+  height: 200px;
+
+  background-color: blue;
+
+  &--rounded-left {
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+  }
+
+  &--rounded-right {
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+  }
+}
