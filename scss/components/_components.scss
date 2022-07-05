@@ -14,3 +14,10 @@
     border-top-right-radius: 100px;
   }
 }
+
+.header {
+  &_img {
+    width: 105%;
+    margin-left: -2.5%;
+  }
+}

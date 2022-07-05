@@ -5,7 +5,7 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: minmax(15px, 5vw) 1fr minmax(15px, 5vw);
+  grid-template-columns: minmax(32px, 8vw) 1fr minmax(32px, 8vw);
 
   > * {
     grid-column: 2 / 3;
