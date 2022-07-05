@@ -1,4 +1,12 @@
 .tablist {
+  input {
+    display: none;
+  }
+  label {
+    display: block;
+    text-align: center;
+  }
+
   .tab-pane {
     display: none;
   }

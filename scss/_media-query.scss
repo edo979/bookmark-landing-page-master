@@ -90,6 +90,17 @@
       width: 100%;
     }
 
+    text-align: center;
+
+    div {
+      text-align: left;
+    }
+
+    label {
+      display: inline-block;
+      padding-inline: 3rem;
+    }
+
     input[id$='1']:checked {
       ~ #tab-1-pane {
         display: flex;
