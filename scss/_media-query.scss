@@ -82,6 +82,17 @@
   .cards {
     &_container {
       --direction: row;
+      --align: start;
+    }
+
+    $m-top: 1rem;
+
+    .card:nth-child(2) {
+      margin-top: 2 * $m-top;
+    }
+
+    .card:last-of-type {
+      margin-top: 4 * $m-top;
     }
   }
 
