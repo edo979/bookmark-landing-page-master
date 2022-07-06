@@ -21,6 +21,10 @@
     margin-left: -6%;
   }
 
+  &_content {
+    text-align: center;
+  }
+
   &_background {
     margin-top: 50px;
   }
@@ -48,4 +52,11 @@
     width: 100%;
     margin-block: 1rem;
   }
+}
+
+.center-content {
+  margin-inline: auto;
+  max-width: 53ch;
+
+  text-align: center;
 }

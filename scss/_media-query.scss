@@ -56,6 +56,7 @@
 
     &_content {
       margin-top: 85px;
+      text-align: left;
 
       .flex {
         --justify: start;
@@ -70,13 +71,6 @@
   .bg-box {
     height: 350px;
     width: 530px;
-  }
-
-  .center-content {
-    margin-inline: auto;
-    max-width: 53ch;
-
-    text-align: center;
   }
 
   .cards {
@@ -102,10 +96,6 @@
     }
 
     text-align: center;
-
-    div {
-      text-align: left;
-    }
 
     label {
       display: inline-block;
@@ -134,6 +124,7 @@
       justify-content: space-between;
       align-items: center;
       min-height: 500px;
+      text-align: left;
 
       &_text {
         max-width: 45ch;
