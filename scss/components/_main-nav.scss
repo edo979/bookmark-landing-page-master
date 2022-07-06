@@ -56,6 +56,12 @@
     align-items: center;
   }
 
+  &_link {
+    font-size: var(--fs-600);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
   &_social {
     position: absolute;
     top: max(180px, 50vh);
