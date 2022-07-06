@@ -1,4 +1,12 @@
 .accordion {
+  // button after accordion
+  &-content {
+    > button {
+      display: block;
+      margin-inline: auto;
+    }
+  }
+
   label {
     display: flex;
     justify-content: space-between;

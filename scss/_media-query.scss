@@ -137,4 +137,17 @@
       margin-top: 0;
     }
   }
+
+  .contact-us {
+    --direction: row;
+    --align: center;
+
+    input {
+      width: 70%;
+    }
+
+    button {
+      width: 30%;
+    }
+  }
 }

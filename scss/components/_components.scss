@@ -58,3 +58,10 @@
   margin-inline: auto;
   max-width: 53ch;
 }
+
+.contact-us {
+  --direction: column;
+  --align: stretch;
+
+  text-align: center;
+}
