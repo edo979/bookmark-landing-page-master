@@ -1,16 +1,69 @@
 .accordion {
-  &_collapse,
-  input[type='radio'] {
-    display: none;
+  label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img,
+    svg {
+      cursor: pointer;
+    }
   }
 
-  label {
-    display: block;
+  label[for*='close'] {
+    display: none;
+
+    svg {
+      path {
+        stroke: red;
+      }
+    }
   }
 
   input[type='radio']:checked {
-    & + .accordion_collapse {
+    & + label + label + .accordion_collapse {
       display: block;
+
+      animation: 1s slidein;
     }
+
+    & + label {
+      display: none;
+    }
+
+    & + label + label {
+      display: flex;
+
+      svg {
+        animation: 0.5s rotate;
+        transform: rotate(180deg);
+      }
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(180deg);
+      }
+    }
+    @keyframes slidein {
+      from {
+        height: 0;
+        opacity: 0;
+      }
+      30% {
+        height: fit-content;
+        opacity: 0.05;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+  &_collapse,
+  input[type='radio'] {
+    display: none;
   }
 }
