@@ -15,6 +15,10 @@
     grid-area: 2 / 2 / 3 / 4;
   }
 
+  .contact-us {
+    grid-column: 1 / 4;
+  }
+
   // Components
   .main-nav {
     margin-top: 1rem;
@@ -163,7 +167,14 @@
   .contact-us {
     --direction: row;
     --align: center;
-    width: 40ch;
+    width: 100%;
+
+    background-color: $Soft-Blue;
+
+    &_container {
+      width: 40ch;
+      margin-inline: auto;
+    }
 
     input {
       width: 70%;
