@@ -1,4 +1,11 @@
 @include mq($bp-lg) {
+  // Taypography:
+  :root {
+    --fs-400: 1rem;
+    --fs-800: 1.8rem;
+    --fs-900: 2.7rem;
+  }
+
   // Layout:
   .grid-container {
     max-width: 1440px;
@@ -44,7 +51,8 @@
     &_link {
       padding: 0;
       border: 0;
-      font-size: var(--fs-400);
+      font-size: var(--btn-fs);
+      letter-spacing: 1.5px;
       color: $Very-Dark-Blue;
 
       &:first-child {
