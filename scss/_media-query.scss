@@ -7,6 +7,9 @@
   }
 
   // Layout:
+  .flow {
+    --flow-gap: 1.25rem;
+  }
   .grid-container {
     max-width: 1440px;
     margin-inline: auto;
