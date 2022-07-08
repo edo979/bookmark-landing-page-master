@@ -6,7 +6,13 @@ $Soft-Red: hsl(0, 94%, 66%);
 
 // ### Neutral
 $Grayish-Blue: hsl(229, 8%, 60%);
+$Grayish-Blue-500: hsl(229, 8%, 45%);
 $Very-Dark-Blue: hsl(229, 31%, 21%);
+
+$white: rgba(
+  $color: white,
+  $alpha: 0.9,
+);
 
 $bp-lg: 528px;
 

@@ -69,3 +69,36 @@
 
   background-color: $Soft-Blue;
 }
+
+.btn {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+
+  font-size: var(--btn-fs);
+  font-weight: 500;
+  background-color: transparent;
+
+  cursor: pointer;
+
+  &-primary {
+    color: $white;
+    background-color: $Soft-Blue;
+
+    box-shadow: 0 5px 5px rgba($color: $Soft-Blue, $alpha: 0.2);
+  }
+
+  &-secondary {
+    color: $Grayish-Blue-500;
+    background-color: white;
+
+    box-shadow: 0 5px 5px rgba($color: $Grayish-Blue, $alpha: 0.2);
+  }
+
+  &-danger {
+    color: $white;
+    background-color: $Soft-Red;
+
+    box-shadow: 0 5px 5px rgba($color: $Soft-Red, $alpha: 0.2);
+  }
+}
