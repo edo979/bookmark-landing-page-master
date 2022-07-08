@@ -1,13 +1,4 @@
 .main-nav {
-  $white-400: rgba(
-    $color: #fff,
-    $alpha: 0.8,
-  );
-  $white-500: rgba(
-    $color: #fff,
-    $alpha: 0.2,
-  );
-
   width: 100%;
 
   label {
@@ -74,13 +65,7 @@
   }
 
   &_link {
-    width: 100%;
-    padding-block: 0.9rem;
-    border-bottom: 1px solid $white-500;
-
-    &:first-child {
-      border-top: 1px solid $white-500;
-    }
+    @include block-border();
 
     font-size: var(--fs-600);
     letter-spacing: 3px;

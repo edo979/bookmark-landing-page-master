@@ -5,6 +5,12 @@
   label {
     display: block;
     text-align: center;
+
+    font-size: var(--fs-500);
+    color: $Grayish-Blue;
+    font-weight: 500;
+
+    @include block-border($Grayish-Blue-300);
   }
 
   .tab-pane {
@@ -17,17 +23,11 @@
     ~ #tab-1-pane {
       display: block;
     }
-    + label {
-      outline: 1px solid red;
-    }
   }
 
   input[id$='2']:checked {
     ~ #tab-2-pane {
       display: block;
-    }
-    + label {
-      outline: 1px solid red;
     }
   }
 
@@ -35,8 +35,24 @@
     ~ #tab-3-pane {
       display: block;
     }
+  }
+
+  input:checked {
     + label {
-      outline: 1px solid red;
+      position: relative;
+
+      color: $Very-Dark-Blue;
+
+      &::after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        width: 140px;
+
+        border-bottom: 4px solid $Soft-Red;
+      }
     }
   }
 }

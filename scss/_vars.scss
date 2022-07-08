@@ -5,6 +5,7 @@ $Soft-Blue: hsl(231, 69%, 60%);
 $Soft-Red: hsl(0, 94%, 66%);
 
 // ### Neutral
+$Grayish-Blue-300: hsl(229, 8%, 85%);
 $Grayish-Blue: hsl(229, 8%, 60%);
 $Grayish-Blue-500: hsl(229, 8%, 45%);
 $Very-Dark-Blue: hsl(229, 31%, 21%);
@@ -14,10 +15,29 @@ $white: rgba(
   $alpha: 0.9,
 );
 
+$white-400: rgba(
+  $color: #fff,
+  $alpha: 0.8,
+);
+$white-500: rgba(
+  $color: #fff,
+  $alpha: 0.2,
+);
+
 $bp-lg: 528px;
 
 @mixin mq($bp) {
   @media (min-width: $bp) {
     @content;
+  }
+}
+
+@mixin block-border($color: $white-500, $padding: 0.9rem) {
+  width: 100%;
+  padding-block: $padding;
+  border-bottom: 1px solid $color;
+
+  &:first-of-type {
+    border-top: 1px solid $color;
   }
 }
