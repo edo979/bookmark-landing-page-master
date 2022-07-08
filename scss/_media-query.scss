@@ -3,6 +3,7 @@
   :root {
     --fs-300: 0.7rem;
     --fs-400: 1rem;
+    --fs-500: 0.95rem;
     --fs-800: 1.8rem;
     --fs-900: 2.7rem;
   }
@@ -142,8 +143,25 @@
     text-align: center;
 
     label {
+      border: 0;
+      width: max-content;
       display: inline-block;
-      padding-inline: 3rem;
+      padding: 1.25rem 2.5rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        bottom: 0;
+        height: 1px;
+
+        background-color: $Grayish-Blue-300;
+      }
+
+      &:first-of-type {
+        border-top: none;
+      }
     }
 
     input[id$='1']:checked {
@@ -164,10 +182,19 @@
       }
     }
 
+    input:checked {
+      + label {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+
     .tab-pane {
       justify-content: space-between;
       align-items: center;
-      min-height: 500px;
+      margin-top: 3.5rem;
+
       text-align: left;
 
       &_text {

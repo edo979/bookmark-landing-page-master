@@ -3,6 +3,7 @@
     display: none;
   }
   label {
+    position: relative;
     display: block;
     text-align: center;
 
@@ -39,8 +40,6 @@
 
   input:checked {
     + label {
-      position: relative;
-
       color: $Very-Dark-Blue;
 
       &::after {
@@ -50,8 +49,9 @@
         left: 50%;
         transform: translate(-50%);
         width: 140px;
+        height: 4px;
 
-        border-bottom: 4px solid $Soft-Red;
+        background-color: $Soft-Red;
       }
     }
   }
