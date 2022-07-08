@@ -43,11 +43,22 @@
 
 .card {
   width: 100%;
-  padding-block: 1rem;
+  padding: 3rem 1.25rem 1.25rem;
+  border-radius: 15px;
 
   text-align: center;
 
-  box-shadow: 0 5px 15px rgba($color: #000000, $alpha: 0.2);
+  box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.08);
+
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 1.8rem 0 0.45rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
 
   img[src*='logo'] {
     margin-inline: auto;
@@ -55,7 +66,7 @@
 
   img[src*='dots'] {
     width: 100%;
-    margin-block: 1rem;
+    margin: 2rem 0 1.35rem;
   }
 }
 
@@ -105,5 +116,9 @@
     background-color: $Soft-Red;
 
     box-shadow: 0 5px 5px rgba($color: $Soft-Red, $alpha: 0.2);
+  }
+
+  &-lg {
+    width: 100%;
   }
 }
