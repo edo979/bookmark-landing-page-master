@@ -222,11 +222,13 @@
   .contact-us {
     --direction: row;
     --align: center;
+    padding-bottom: 3rem;
     width: 100%;
 
     background-color: $Soft-Blue;
 
     &_container {
+      --flow-gap: 2rem;
       width: 40ch;
       margin-inline: auto;
     }

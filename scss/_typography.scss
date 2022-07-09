@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
 :root {
+  --fs-300: 0.7rem;
   --fs-400: 0.85rem;
   --fs-500: 0.9rem;
   --fs-600: 1.1rem;
@@ -41,4 +42,13 @@ h3 {
 // Utility
 .text-center {
   text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.text-small {
+  font-size: var(--fs-300);
 }
