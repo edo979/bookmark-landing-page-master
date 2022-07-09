@@ -209,6 +209,16 @@
     }
   }
 
+  .accordion {
+    label:first-of-type {
+      border-top: 1px solid $Grayish-Blue-300;
+    }
+
+    input[type='radio']:first-of-type:checked + label + label {
+      border-top: 1px solid $Grayish-Blue-300;
+    }
+  }
+
   .contact-us {
     --direction: row;
     --align: center;

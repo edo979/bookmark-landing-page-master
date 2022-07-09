@@ -12,6 +12,11 @@
     justify-content: space-between;
     align-items: center;
 
+    padding-block: 1rem;
+    border-bottom: 1px solid $Grayish-Blue-300;
+
+    color: $Very-Dark-Blue;
+
     img,
     svg {
       cursor: pointer;
@@ -41,6 +46,8 @@
 
     & + label + label {
       display: flex;
+      margin-bottom: 1rem;
+      border: none;
 
       svg {
         animation: 0.5s rotate;
@@ -70,8 +77,15 @@
       }
     }
   }
+
   &_collapse,
   input[type='radio'] {
     display: none;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $Grayish-Blue-300;
+
+    p {
+      line-height: 1.95;
+    }
   }
 }
