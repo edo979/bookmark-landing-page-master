@@ -1,7 +1,39 @@
 .footer {
+  position: relative;
+
   --direction: column;
+  padding: 2rem;
 
   background-color: $Very-Dark-Blue;
+
+  &_logo {
+    svg g path {
+      fill: white;
+    }
+  }
+
+  &_nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    text-align: center;
+
+    li {
+      margin-top: 1.5rem;
+
+      &:first-of-type {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+
+  &_link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white-400;
+    letter-spacing: 2px;
+  }
 
   &_background {
     display: block;
@@ -9,4 +41,19 @@
 
     background-color: $Very-Dark-Blue;
   }
+
+  &_social {
+    --direction: row;
+    --gap: 2rem;
+
+    margin-top: 1.5rem;
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
 }
