@@ -244,5 +244,31 @@
 
   .footer {
     --direction: row;
+    --justify: start;
+    --align: start;
+    --gap: 3.5rem;
+
+    padding-bottom: 1rem;
+
+    &_nav-list {
+      --direction: row;
+      --gap: 2.45rem;
+
+      li {
+        margin: 0;
+        &:first-of-type {
+          margin: 0;
+        }
+      }
+    }
+
+    &_link {
+      font-size: var(--fs-300);
+    }
+
+    &_social {
+      margin: 0;
+      margin-left: auto;
+    }
   }
 }
