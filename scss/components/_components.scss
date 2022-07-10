@@ -22,11 +22,9 @@
   }
 
   &_content {
+    --flow-gap: 1.5rem;
+    margin-top: 4rem;
     text-align: center;
-  }
-
-  &_background {
-    margin-top: 50px;
   }
 
   .btn {
