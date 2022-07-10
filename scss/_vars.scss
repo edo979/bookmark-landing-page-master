@@ -24,7 +24,8 @@ $white-500: rgba(
   $alpha: 0.2,
 );
 
-$bp-lg: 528px;
+$bp-md: 784px;
+$bp-lg: 1080px;
 
 @mixin mq($bp) {
   @media (min-width: $bp) {

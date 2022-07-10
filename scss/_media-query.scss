@@ -1,95 +1,19 @@
-@include mq($bp-lg) {
-  // Taypography:
-  :root {
-    --fs-300: 0.7rem;
-    --fs-400: 1rem;
-    --fs-500: 0.95rem;
-    --fs-800: 1.8rem;
-    --fs-900: 2.7rem;
-  }
-
-  // Layout:
-  .flow {
-    --flow-gap: 1.25rem;
-  }
-
+@include mq($bp-md) {
   .grid-container {
-    max-width: 1440px;
     margin-inline: auto;
 
-    grid-template-columns: minmax(32px, 1fr) minmax(735px, 1110px) minmax(
-        32px,
+    grid-template-columns: minmax(15px, 1fr) minmax(400px, 950px) minmax(
+        15px,
         1fr
       );
     justify-items: center;
-  }
-
-  // y spacing for sections
-  section {
-    margin-top: 9.5rem;
-  }
-
-  .header {
-    margin-top: 5.75rem;
-    margin-bottom: 2rem;
-    grid-area: 2 / 2 / 3 / 4;
-
-    &_background {
-      align-self: end;
-    }
   }
 
   .contact-us {
     grid-column: 1 / 4;
   }
 
-  // Components
-  .main-nav {
-    margin-top: 1rem;
-
-    label {
-      display: none;
-    }
-
-    &_list {
-      display: block;
-
-      .flex {
-        display: none;
-      }
-
-      nav {
-        flex-direction: row;
-        align-items: center;
-        gap: 3rem;
-      }
-    }
-
-    &_link {
-      padding: 0;
-      border: 0;
-      font-size: var(--fs-300);
-      letter-spacing: 1.5px;
-      color: $Very-Dark-Blue;
-
-      &:first-child {
-        border: 0;
-      }
-
-      &:last-of-type {
-        border: 0;
-        padding: 0.5rem 1.75rem;
-        margin: 0;
-
-        background-color: $Soft-Red;
-      }
-    }
-
-    &_social {
-      display: none;
-    }
-  }
-
+  // Components:
   .header {
     display: flex;
     align-items: center;
@@ -119,6 +43,208 @@
     .btn {
       flex-basis: auto;
       padding-inline: 1.5rem;
+    }
+  }
+
+  .main-nav {
+    margin-top: 1rem;
+
+    label {
+      display: none;
+    }
+
+    &_list {
+      display: block;
+
+      .flex {
+        display: none;
+      }
+
+      nav {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+
+    &_link {
+      padding: 0;
+      border: 0;
+      font-size: var(--fs-300);
+      letter-spacing: 1.5px;
+      color: $Very-Dark-Blue;
+
+      &:first-child {
+        border: 0;
+      }
+
+      &:last-of-type {
+        border: 0;
+        padding: 0.5rem 1.75rem;
+        margin: 0;
+
+        background-color: $Soft-Red;
+      }
+    }
+
+    &_social {
+      display: none;
+    }
+  }
+
+  .tablist {
+    &-section {
+      width: 100%;
+      margin-top: 5rem;
+      margin-bottom: 6rem;
+    }
+
+    text-align: center;
+
+    label {
+      border: 0;
+      width: max-content;
+      display: inline-block;
+      padding: 1.25rem 2.5rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        bottom: 0;
+        height: 1px;
+
+        background-color: $Grayish-Blue-300;
+      }
+
+      &:first-of-type {
+        border-top: none;
+      }
+    }
+
+    input[id$='1']:checked {
+      ~ #tab-1-pane {
+        display: flex;
+      }
+    }
+
+    input[id$='2']:checked {
+      ~ #tab-2-pane {
+        display: flex;
+      }
+    }
+
+    input[id$='3']:checked {
+      ~ #tab-3-pane {
+        display: flex;
+      }
+    }
+
+    input:checked {
+      + label {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+
+    .tab-pane {
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 3.5rem;
+      gap: 1rem;
+
+      text-align: left;
+
+      &_text {
+        max-width: 38ch;
+        margin-top: 2rem;
+      }
+    }
+
+    &_background {
+      justify-self: start;
+      align-self: end;
+      margin-top: 0;
+    }
+  }
+
+  .contact-us {
+    --direction: row;
+    --align: center;
+    padding-bottom: 4.5rem;
+    width: 100%;
+
+    background-color: $Soft-Blue;
+
+    &_container {
+      --flow-gap: 2rem;
+      width: 50ch;
+      margin-inline: auto;
+    }
+
+    input {
+      width: 70%;
+    }
+
+    button {
+      width: 30%;
+    }
+  }
+}
+
+@include mq($bp-lg) {
+  // Taypography:
+  :root {
+    --fs-300: 0.7rem;
+    --fs-400: 1rem;
+    --fs-500: 0.95rem;
+    --fs-800: 1.8rem;
+    --fs-900: 2.7rem;
+  }
+
+  // Layout:
+  .flow {
+    --flow-gap: 1.25rem;
+  }
+
+  .grid-container {
+    max-width: 1440px;
+
+    grid-template-columns: minmax(32px, 1fr) minmax(735px, 1110px) minmax(
+        32px,
+        1fr
+      );
+  }
+
+  // y spacing for sections
+  section {
+    margin-top: 9.5rem;
+  }
+
+  .header {
+    margin-top: 5.75rem;
+    margin-bottom: 2rem;
+    grid-area: 2 / 2 / 3 / 4;
+
+    &_background {
+      align-self: end;
+    }
+  }
+
+  // Components
+  .main-nav {
+    &_list {
+      nav {
+        flex-direction: row;
+        align-items: center;
+        gap: 3rem;
+      }
+    }
+
+    &_social {
+      display: none;
     }
   }
 
@@ -234,25 +360,8 @@
   }
 
   .contact-us {
-    --direction: row;
-    --align: center;
-    padding-bottom: 4.5rem;
-    width: 100%;
-
-    background-color: $Soft-Blue;
-
     &_container {
-      --flow-gap: 2rem;
       width: 40ch;
-      margin-inline: auto;
-    }
-
-    input {
-      width: 70%;
-    }
-
-    button {
-      width: 30%;
     }
   }
 
