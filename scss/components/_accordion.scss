@@ -1,4 +1,11 @@
 .accordion {
+  margin: 2.5rem 0 3rem;
+
+  // accordion container
+  &-content {
+    padding-bottom: 6.5rem;
+  }
+
   // button after accordion
   &-content {
     > button {

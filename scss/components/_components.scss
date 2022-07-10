@@ -36,17 +36,19 @@
 .cards {
   &_container {
     --direction: column;
+    --gap: 2rem;
+    margin-top: 2rem;
   }
 }
 
 .card {
-  width: 100%;
+  width: 280px;
   padding: 3rem 1.25rem 1.25rem;
   border-radius: 15px;
 
   text-align: center;
 
-  box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.08);
+  box-shadow: 0 5px 10px rgba($color: $Very-Dark-Blue, $alpha: 0.15);
 
   h3 {
     font-size: 1.1rem;
@@ -76,6 +78,7 @@
 .contact-us {
   --direction: column;
   --align: stretch;
+  margin-top: 0;
 
   width: 100%;
   padding: 4rem 0 2rem;

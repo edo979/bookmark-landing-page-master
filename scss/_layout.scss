@@ -12,10 +12,6 @@
   }
 }
 
-section {
-  margin-top: 8rem;
-}
-
 .grid-container {
   margin-top: 2rem;
   display: grid;
@@ -24,6 +20,11 @@ section {
   > * {
     grid-column: 2 / 3;
   }
+}
+
+// y spacing for all sections
+section {
+  margin-top: 8rem;
 }
 
 .header {
@@ -47,8 +48,8 @@ section {
 .tablist_background {
   grid-area: 3 / 1 / 4 / 4;
   z-index: -1;
-  align-self: center;
-  margin-top: 120px;
+
+  margin-top: 610px;
 }
 
 .contact-us {
