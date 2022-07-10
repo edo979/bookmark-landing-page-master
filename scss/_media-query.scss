@@ -12,6 +12,7 @@
   .flow {
     --flow-gap: 1.25rem;
   }
+
   .grid-container {
     max-width: 1440px;
     margin-inline: auto;
@@ -23,8 +24,19 @@
     justify-items: center;
   }
 
+  // y spacing for sections
+  section {
+    margin-top: 9.5rem;
+  }
+
   .header {
+    margin-top: 5.75rem;
+    margin-bottom: 2rem;
     grid-area: 2 / 2 / 3 / 4;
+
+    &_background {
+      align-self: end;
+    }
   }
 
   .contact-us {
@@ -95,16 +107,13 @@
     }
 
     &_content {
-      margin-top: 2rem;
+      margin-top: 0;
+      width: 70ch;
       text-align: left;
 
       .flex {
         --justify: start;
       }
-    }
-
-    &_background {
-      margin-top: auto;
     }
 
     .btn {
@@ -118,26 +127,11 @@
     width: 530px;
   }
 
-  .cards {
-    &_container {
-      --direction: row;
-      --align: start;
-    }
-
-    $m-top: 1rem;
-
-    .card:nth-child(2) {
-      margin-top: 2 * $m-top;
-    }
-
-    .card:last-of-type {
-      margin-top: 4 * $m-top;
-    }
-  }
-
   .tablist {
     &-section {
       width: 100%;
+      margin-top: 5rem;
+      margin-bottom: 6rem;
     }
 
     text-align: center;
@@ -198,7 +192,8 @@
       text-align: left;
 
       &_text {
-        max-width: 45ch;
+        max-width: 38ch;
+        margin-top: 2rem;
       }
     }
 
@@ -209,7 +204,25 @@
     }
   }
 
+  .cards {
+    &_container {
+      --direction: row;
+      --align: start;
+    }
+
+    $m-top: 1.3rem;
+
+    .card:nth-child(2) {
+      margin-top: 2 * $m-top;
+    }
+
+    .card:last-of-type {
+      margin-top: 4 * $m-top;
+    }
+  }
+
   .accordion {
+    margin: 3rem 0 3.5rem;
     label:first-of-type {
       border-top: 1px solid $Grayish-Blue-300;
     }
