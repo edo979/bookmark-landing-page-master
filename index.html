@@ -105,16 +105,24 @@
 
         <div class="tablist" role="tablist">
           <input type="radio" name="tablist" id="tab-1" value="tab-1" checked />
-          <label for="tab-1">Simple Bookmarking</label
-          ><input type="radio" name="tablist" id="tab-2" value="tab-2" /><label
-            for="tab-2"
-            >Speedy Searching</label
-          ><input type="radio" name="tablist" id="tab-3" value="tab-3" /><label
-            for="tab-3"
-            >Easy Sharing</label
-          >
+          <label for="tab-1" role="tab" aria-controls="tab-1-pane">
+            Simple Bookmarking
+          </label>
+          <input type="radio" name="tablist" id="tab-2" value="tab-2" />
+          <label for="tab-2" role="tab" aria-controls="tab-2-pane">
+            Speedy Searching
+          </label>
+          <input type="radio" name="tablist" id="tab-3" value="tab-3" />
+          <label for="tab-3" role="tab" aria-controls="tab-3-pane">
+            Easy Sharing
+          </label>
 
-          <div class="tab-pane" id="tab-1-pane">
+          <div
+            class="tab-pane"
+            id="tab-1-pane"
+            role="tabpanel"
+            aria-labelledby="bookmark-one-click-tab"
+          >
             <div>
               <img
                 src="images/illustration-features-tab-1.svg"
@@ -132,7 +140,12 @@
             </div>
           </div>
 
-          <div class="tab-pane" id="tab-2-pane">
+          <div
+            class="tab-pane"
+            id="tab-2-pane"
+            role="tabpanel"
+            aria-labelledby="inteligent-search-tab"
+          >
             <div>
               <img
                 src="images/illustration-features-tab-2.svg"
@@ -149,7 +162,12 @@
             </div>
           </div>
 
-          <div class="tab-pane" id="tab-3-pane">
+          <div
+            class="tab-pane"
+            id="tab-3-pane"
+            role="tabpanel"
+            aria-labelledby="share-bookmark-tab"
+          >
             <div>
               <img
                 src="images/illustration-features-tab-3.svg"
