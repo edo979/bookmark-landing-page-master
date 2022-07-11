@@ -18,6 +18,11 @@
     font-weight: 500;
 
     @include block-border($Grayish-Blue-300);
+
+    &:hover,
+    &:focus {
+      color: rgba($color: $Soft-Red, $alpha: 0.75);
+    }
   }
 
   input[id$='1']:checked {

@@ -73,6 +73,11 @@
     text-decoration: none;
     color: $white-400;
 
+    &:hover,
+    &:focus {
+      color: rgba($color: $Soft-Red, $alpha: 0.75);
+    }
+
     &:last-of-type {
       padding-block: 0.45rem;
       margin-top: 1.3rem;
@@ -81,6 +86,13 @@
 
       color: white;
       font-weight: 500;
+
+      &:focus,
+      &:hover {
+        background-color: white;
+        color: $Soft-Red;
+        outline: 2px solid $Soft-Red;
+      }
     }
   }
 
