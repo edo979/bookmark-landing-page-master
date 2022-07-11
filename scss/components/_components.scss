@@ -116,6 +116,14 @@
 
       background-color: $Soft-Red;
     }
+
+    img {
+      display: none;
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 
   input {
@@ -136,7 +144,8 @@
     &:invalid {
       outline: 2px solid $Soft-Red;
 
-      & + span {
+      & + span,
+      & + span + img {
         display: block;
       }
     }
