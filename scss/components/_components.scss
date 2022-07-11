@@ -96,15 +96,9 @@
   .form-input {
     position: relative;
 
-    span {
+    p {
       display: none;
-
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0px;
       padding: 3px 10px;
-      transform: translateY(90%);
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
 
@@ -121,15 +115,15 @@
       display: none;
       position: absolute;
       right: 15px;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 14px;
     }
   }
 
   input {
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1rem;
     border: none;
     border-radius: 5px;
+    width: 100%;
 
     color: $Very-Dark-Blue;
 
@@ -144,8 +138,8 @@
     &:invalid {
       outline: 2px solid $Soft-Red;
 
-      & + span,
-      & + span + img {
+      & + p,
+      & + p + img {
         display: block;
       }
     }
