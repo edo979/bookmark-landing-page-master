@@ -35,6 +35,11 @@
     text-transform: uppercase;
     color: $white-400;
     letter-spacing: 2px;
+
+    &:hover,
+    &:focus {
+      color: $Soft-Red;
+    }
   }
 
   &_background {
@@ -49,6 +54,15 @@
     --gap: 2rem;
 
     margin-top: 1.5rem;
+
+    svg {
+      &:hover,
+      &:focus {
+        path {
+          fill: $Soft-Red;
+        }
+      }
+    }
   }
 }
 
