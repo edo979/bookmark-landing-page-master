@@ -184,12 +184,19 @@
       margin-inline: auto;
     }
 
-    input {
-      width: 70%;
-    }
+    // form
+    .flex {
+      > :first-child {
+        width: 70%;
 
-    button {
-      width: 30%;
+        input {
+          width: 100%;
+        }
+      }
+
+      > :last-child {
+        width: 30%;
+      }
     }
   }
 }

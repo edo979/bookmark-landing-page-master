@@ -93,6 +93,31 @@
     color: inherit;
   }
 
+  .form-input {
+    position: relative;
+
+    span {
+      display: none;
+
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0px;
+      padding: 3px 10px;
+      transform: translateY(90%);
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+
+      outline: 2px solid $Soft-Red;
+
+      font-size: 0.6rem;
+      font-style: italic;
+      text-align: left;
+
+      background-color: $Soft-Red;
+    }
+  }
+
   input {
     padding: 0.5rem 1rem;
     border: none;
@@ -106,6 +131,14 @@
 
     &:focus-visible {
       outline: 1px solid $Very-Dark-Blue;
+    }
+
+    &:invalid {
+      outline: 2px solid $Soft-Red;
+
+      & + span {
+        display: block;
+      }
     }
   }
 }
