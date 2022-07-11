@@ -162,6 +162,13 @@
     background-color: $Soft-Blue;
 
     box-shadow: 0 5px 5px rgba($color: $Soft-Blue, $alpha: 0.2);
+
+    &:hover,
+    &:focus {
+      background-color: white;
+      outline: 2px solid $Soft-Blue;
+      color: $Soft-Blue;
+    }
   }
 
   &-secondary {
@@ -169,6 +176,11 @@
     background-color: white;
 
     box-shadow: 0 5px 5px rgba($color: $Grayish-Blue, $alpha: 0.2);
+
+    &:hover,
+    &:focus {
+      outline: 2px solid $Grayish-Blue-500;
+    }
   }
 
   &-danger {
@@ -176,6 +188,13 @@
     background-color: $Soft-Red;
 
     box-shadow: 0 5px 5px rgba($color: $Soft-Red, $alpha: 0.2);
+
+    &:hover,
+    &:focus {
+      background-color: white;
+      outline: 2px solid $Soft-Red;
+      color: $Soft-Red;
+    }
   }
 
   &-lg {
